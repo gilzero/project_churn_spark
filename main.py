@@ -1,16 +1,9 @@
-# This is a sample Python script.
+# Summary df for n_session within 4 moving period, each period is 4 weeks
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+df_n_session = df_p[df_p.period.isin([1,2,3,4])]
+ds_n_session = df_n_session.groupby(['userId','period'])['sessionId'].count()
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# turn groupby output to dataframe
+df_n_session_count = pd.DataFrame(ds_n_session).reset_index()
+df_n_session_count.columns = ['userId', 'period', 'n_session']
+df_n_session_count.head(10)
