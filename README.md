@@ -19,6 +19,7 @@ exploring in mini set locally before go to Spark Cluster (DataBricks workspace)
 - average duration / session
 - tenure (from tenure_from to ob_datetime)
 - rate of like (ratio: n_like / n_songplay)
+
 - rate of dislike (ratio: n_dislike / n_songplay)
 - rate of ad per play (ratio: adview / n_songplay)
 - rate of addplaylist (ratio: add / n_songplay)
