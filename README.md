@@ -26,6 +26,8 @@ exploring in mini set locally before go to Spark Cluster (DataBricks workspace)
 - rolling change of songlike. % #
 
 
+
+
 ### u churn
 
 [13,
@@ -49,4 +51,6 @@ exploring in mini set locally before go to Spark Cluster (DataBricks workspace)
  200017,
  300001,
  300004]
+
+# metrics to pick
 
