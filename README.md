@@ -1,3 +1,7 @@
+# files
+sparkify.ipynb (archived)
+
+
 # project_churn_spark
 exploring in mini set locally before go to Spark Cluster (DataBricks workspace)
 
