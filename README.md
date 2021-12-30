@@ -58,7 +58,7 @@ Churn problem is crucial for consumer business industry. Churn means losing user
 
 ### Files
 
-Please note that GitHub won’t display Plotly visualization in Jupyter source code notebook file viewing. For a better reading experience, please check the exposed PDF file. 
+Please note that GitHub won’t display Plotly visualization in Jupyter source code notebook file viewing. For a better reading experience, please check the exported PDF file. 
 
 Source Code:
 - sparkify_min.ipynb_
