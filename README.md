@@ -11,6 +11,8 @@
 - Files
 - Summary of the results
 - Acknowledgment
+- Data Source
+- Known errors (updated)
 
 ---- 
 
@@ -87,6 +89,23 @@ XBGoost is able to detect 7 of 10 actual churn instants in test set, while Logis
 ### Data Source (Event Data)
 - (mini 120MB) s3n://udacity-dsnd/sparkify/mini\_sparkify\_event\_data.json
 - (full 12GB) s3n://udacity-dsnd/sparkify/sparkify\_event\_data.json
+
+### Known errors (updated)
+A possible mistake made in Logistic Regression section that, I used the normalized values that was applying scaler on whole set. Instead should scaler fit to train set, and then transform with train and set separately with that returned scaler.
+
+Should be something like: 
+```
+# preprocessing using 0-1 scaling
+scaler = MinMaxScaler()
+scaler.fit(X_train)
+X_train_scaled = scaler.transform(X_train)
+X_test_scaled = scaler.transform(X_test)
+```
+then send to training (fit and predict)
+
+(notebook coded didn't update. lazy. :-) )
+
+
 
 
 [1]:	https://weimingchenzero.medium.com/applied-data-science-with-churn-problem-a778821577a2
