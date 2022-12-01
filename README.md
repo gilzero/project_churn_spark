@@ -103,7 +103,7 @@ X_test_scaled = scaler.transform(X_test)
 ```
 then send to training (fit and predict)
 
-(notebook coded didn't update. lazy. :-) )
+(notebook codes didn't update. lazy. :-) )
 
 
 
