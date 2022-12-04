@@ -12,7 +12,7 @@
 - Summary of the results
 - Acknowledgment
 - Data Source
-- Known errors (updated)
+- Known errors - data leakage (updated)
 
 ---- 
 
@@ -91,7 +91,7 @@ XBGoost is able to detect 7 of 10 actual churn instants in test set, while Logis
 - (full 12GB) s3n://udacity-dsnd/sparkify/sparkify\_event\_data.json
 
 ### Known errors (updated)
-A possible mistake made in Logistic Regression section that, I used the normalized values that was applying scaler on whole set. Instead should scaler fit to train set, and then transform with train and set separately with that returned scaler.
+A possible mistake made in Logistic Regression section that, I used the normalized values that was applying scaler on whole set. (Data Leakage issue). Instead should scaler fit to train set, and then transform with train and set separately with that returned scaler.
 
 Should be something like: 
 ```
